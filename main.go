@@ -16,6 +16,12 @@ func main() {
 	initialize()
 
 	server := gin.Default()
+
+	server.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "Welcome to my paradise",
+		})
+	})
 	server.POST("/register", controllers.Register)
 	server.POST("/login", controllers.Login)
 	server.Run()
