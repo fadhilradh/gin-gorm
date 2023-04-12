@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/fadhilradh/gin-gorm/controllers"
 	"github.com/fadhilradh/gin-gorm/initializers"
 	"github.com/gin-gonic/gin"
@@ -15,7 +13,6 @@ func initialize() {
 }
 
 func main() {
-	fmt.Println("Goodbye world !")
 	initialize()
 
 	server := gin.Default()
