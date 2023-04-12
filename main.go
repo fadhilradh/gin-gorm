@@ -24,5 +24,6 @@ func main() {
 	})
 	server.POST("/register", controllers.Register)
 	server.POST("/login", controllers.Login)
+	server.GET("/users", controllers.GetUsers)
 	server.Run()
 }
